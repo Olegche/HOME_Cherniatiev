@@ -50,7 +50,7 @@ function accept() {
             return this.team.filter(name => name.sponsor === searchSponsor)
         }
         filterByAge() {
-            return this.team.filter(person => person.age >= 18 && person.age <= 65).sort((young, old) => young.age - old.age)
+            return this.team.filter(person => person.age >= 21 && person.age <= 65).sort((young, old) => young.age - old.age)
         }
        
 
@@ -162,7 +162,7 @@ function accept() {
             const tblSortByName = this.getTeamTable(this.filterByname('Ілон'))
             div.appendChild(tblSortByName)
             container.appendChild(div)
-
+            //створив таблиці з фільтром по віку
             div = document.createElement('div')
             h3 = document.createElement('h3')
             h3.innerText = 'список всіх космонавтів в межах 21-65 років, від молодших до старшого'
