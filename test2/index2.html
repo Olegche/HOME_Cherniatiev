@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Задача 1. Дано оцінки учня за 5 предметів у 12 бальній шкалі.  Вивести номери предметів, з яких у учня трійки?
+// Задача 2. Користувач вводить 10 слів. Підрахувати кількість слів, у яких перша літера і остання літера однакові.
+//  Задача 3. Дано послідовність чисел, які згенеровано випадковим чином. Сформувати новий масив, у якому елементи є більшими за перший елемент.
+// Задача 4. Усі елементи введеного масиву помножити на 17. 
+// Задача 5. Знайти суму елементів, які знаходяться після елемента зі значенням 78.
+
+// Задача 1. Дано оцінки учня за 5 предметів у 12 бальній шкалі.  Вивести номери предметів, з яких у учня трійки?
+
+// 1.
+// let scores = []
+
+// function random(min,max) {
+//     return Math.floor(Math.random() * (max - min + 1))+ min
+    
+// }
+
+// for (let i = 0; i < 5; i++) {
+//     let z = random(1,12)
+//     scores.push(z)
+// }
+
+// let scores3 = scores.filter((score,i) => score > 3 && score <7 ? console.log(`numbers ${i}`): score)
+
+// 2.
+// let words = prompt('10 words','asdads adsa fsdfdd dfdfdfd wewtwt rthrthh hrhhr wtrtr dfggdl jjjhhj')
+// let arr = words.split(' ')
+// let count = 0 
+
+// arr.forEach((word)=> word[0] === word[word.length-1] ? count++ : count)
+// console.log(count);
+
+
+// 3.
+
+// let arr = []
+
+// for (let i = 0; i < 10; i++) {
+//     let digs = Math.floor(Math.random() * (100 - 1)) +1
+//     arr.push(digs)
+    
+// }
+
+// let newArr = arr.filter((el,i,arr) => el > arr[0])
+// console.log(newArr)
+
+
+// 4.
+// let arr = [1,2,3,4,5,6]
+
+// let newArr = arr.map((el) => el * 17)
+
+// console.log(newArr)
+
+// 5.
+
+// let arr = []
+
+// function random(min,max) {
+//     return Math.floor(Math.random() * (max - min) + 1)
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     let z = random(70,101)
+//     arr.push(z)
+    
+// }
+
+// let newArr = arr.slice(arr.indexOf(78)+1)
+
+// let sum = newArr.reduce((suma, el)=> suma + el ,0)
+// console.log(sum);
+
+
+
+    </script>
+</body>
+</html>
