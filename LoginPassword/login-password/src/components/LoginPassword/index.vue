@@ -18,14 +18,14 @@
     >
       {{ messageResult }}
     </div>
-    <div v-show="authorization">
+     <div v-show="authorization" >
       <img
-        src="https://media0.giphy.com/media/VJCUALuSUpjsGyvUrs/giphy.gif?cid=6c09b952d8ff53e597766e6d4780d0473d2a6b7a8ec1c8fb&rid=giphy.gif"
-        alt=""
+        :src="require('@/assets/giphy.gif')"
       />
+      
     </div>
   </div>
-</template>
+</template>›
 
 <script>
 export default {
@@ -35,7 +35,8 @@ export default {
     userList: {
       type: Array,
       default: () => []
-    }
+    },
+
   },
 
   data() {

@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <login-password :user-list ="userList"
+    <login-password 
+    :user-list ="userList"
+  
     />
   </div>
 </template>
@@ -12,16 +14,19 @@ import LoginPassword from './components/LoginPassword'
 import userList from './usersArray'
 
 
+
 export default {
   name: 'App',
   components: {
-   LoginPassword
+   LoginPassword,
+   
   
   },
 
   data() {
     return {
       userList,
+      
 
     }
   }
