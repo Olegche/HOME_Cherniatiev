@@ -18,10 +18,12 @@
     >
       {{ messageResult }}
     </div>
-     <div v-show="authorization" >
+     <div v-show="authorization"  >
       <img
         :src="require('@/assets/giphy.gif')"
       />
+      
+  
       
     </div>
   </div>
@@ -70,8 +72,10 @@ export default {
         if (USER) this.authorization = true;
         else this.authorization = false;
       }
-    },
-  },
+    }
+  }
+
+   
 
 };
 </script>
