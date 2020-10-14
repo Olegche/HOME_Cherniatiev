@@ -92,6 +92,22 @@ export default {
     display: inline-flex
     
 }
+
+@media screen and (max-device-width:375px) {
+
+.mainDiv {
+    width: 100px;
+    height: 100px;
+    border: 4px double rgb(255, 252, 83); 
+    padding: 5px;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+margin-left: 3px;
+    border-radius: 30px;
+}
+
+
+}
 .mainDiv {
     width: 900px;
     border: 4px double rgb(255, 252, 83); 
